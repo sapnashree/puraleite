@@ -1,0 +1,1412 @@
+                                                                                                                    :root {
+                                                                                                                       --primary: #FEA116;
+                                                                                                                       --light: #F1F8FF;
+                                                                                                                       --dark: #0F172B
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   p {
+                                                                                                                       font-size: 17px;
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .fw-medium {
+                                                                                                                       font-weight: 500!important
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .fw-semi-bold {
+                                                                                                                       font-weight: 600!important
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .back-to-top {
+                                                                                                                       position: fixed;
+                                                                                                                       display: none;
+                                                                                                                       right: 45px;
+                                                                                                                       bottom: 45px;
+                                                                                                                       z-index: 99
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   #spinner {
+                                                                                                                       opacity: 0;
+                                                                                                                       visibility: hidden;
+                                                                                                                       transition: opacity .5s ease-out, visibility 0s linear .5s;
+                                                                                                                       z-index: 99999
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   #spinner.show {
+                                                                                                                       transition: opacity .5s ease-out, visibility 0s linear 0s;
+                                                                                                                       visibility: visible;
+                                                                                                                       opacity: 1
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .bootstrap-datetimepicker-widget.bottom {
+                                                                                                                       top: auto!important
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .bootstrap-datetimepicker-widget .table * {
+                                                                                                                       border-bottom-width: 0
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .bootstrap-datetimepicker-widget .table th {
+                                                                                                                       font-weight: 500
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .bootstrap-datetimepicker-widget.dropdown-menu {
+                                                                                                                       padding: 10px;
+                                                                                                                       border-radius: 2px
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .bootstrap-datetimepicker-widget table td.active,
+                                                                                                                   .bootstrap-datetimepicker-widget table td.active:hover {
+                                                                                                                       background: var(--primary)
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .bootstrap-datetimepicker-widget table td.today::before {
+                                                                                                                       border-bottom-color: var(--primary)
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .btn {
+                                                                                                                       font-weight: 500;
+                                                                                                                       text-transform: uppercase;
+                                                                                                                       transition: .5s
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .btn.btn-primary,
+                                                                                                                   .btn.btn-secondary {
+                                                                                                                       color: #fff
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .btn-square {
+                                                                                                                       width: 38px;
+                                                                                                                       height: 38px
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .btn-sm-square {
+                                                                                                                       width: 32px;
+                                                                                                                       height: 32px
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .btn-lg-square {
+                                                                                                                       width: 48px;
+                                                                                                                       height: 48px
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .btn-square,
+                                                                                                                   .btn-sm-square,
+                                                                                                                   .btn-lg-square {
+                                                                                                                       padding: 0;
+                                                                                                                       display: flex;
+                                                                                                                       align-items: center;
+                                                                                                                       justify-content: center;
+                                                                                                                       font-weight: 400;
+                                                                                                                       border-radius: 2px
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .btn.btn-tag {
+                                                                                                                       font-weight: 400;
+                                                                                                                       text-transform: capitalize
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .btn.btn-tag:hover {
+                                                                                                                       color: #fff;
+                                                                                                                       background: var(--primary);
+                                                                                                                       border-color: var(--primary)!important
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .navbar .dropdown-toggle::after {
+                                                                                                                       border: none;
+                                                                                                                       content: "\f107";
+                                                                                                                       font-family: "font awesome 5 free";
+                                                                                                                       font-weight: 900;
+                                                                                                                       vertical-align: middle;
+                                                                                                                       margin-left: 5px;
+                                                                                                                       transition: .5s
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .navbar .dropdown-toggle[aria-expanded=true]::after {
+                                                                                                                       transform: rotate(-180deg)
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .navbar-dark .navbar-nav .nav-link,
+                                                                                                                   .navbar-light .navbar-nav .nav-link {
+                                                                                                                       margin-right: 30px;
+                                                                                                                       padding: 25px 0;
+                                                                                                                       color: #fff;
+                                                                                                                       font-size: 15px;
+                                                                                                                       text-transform: uppercase;
+                                                                                                                       outline: none
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .navbar-dark .navbar-nav .nav-link:hover,
+                                                                                                                   .navbar-dark .navbar-nav .nav-link.active,
+                                                                                                                   .navbar-light .navbar-nav .nav-link:hover,
+                                                                                                                   .navbar-light .navbar-nav .nav-link.active {
+                                                                                                                       /* color: var(--primary) */
+                                                                                                                       /* color: #0C2E61; */
+                                                                                                                       color: #0098DA;
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   @media(max-width:991.98px) {
+                                                                                                                       .navbar-dark .navbar-nav .nav-link,
+                                                                                                                       .navbar-light .navbar-nav .nav-link {
+                                                                                                                           margin-right: 0;
+                                                                                                                           padding: 10px 0
+                                                                                                                       }
+                                                                                                                       .navbar-light .navbar-nav {
+                                                                                                                           border-top: 1px solid #eee
+                                                                                                                       }
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .navbar-light .navbar-brand,
+                                                                                                                   .navbar-light a.btn {
+                                                                                                                       height: 75px
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .navbar-light .navbar-nav .nav-link {
+                                                                                                                       color: var(--dark);
+                                                                                                                       font-weight: 500
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .navbar-light.sticky-top {
+                                                                                                                       top: -100px;
+                                                                                                                       transition: .5s
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   @media(min-width:992px) {
+                                                                                                                       .navbar .nav-item .dropdown-menu {
+                                                                                                                           display: block;
+                                                                                                                           margin-top: 0;
+                                                                                                                           opacity: 0;
+                                                                                                                           visibility: hidden;
+                                                                                                                           transition: .5s
+                                                                                                                       }
+                                                                                                                       .navbar .dropdown-menu.fade-down {
+                                                                                                                           top: 100%;
+                                                                                                                           transform: rotateX(-75deg);
+                                                                                                                           transform-origin: 0% 0%
+                                                                                                                       }
+                                                                                                                       .navbar .dropdown-menu.fade-up {
+                                                                                                                           top: 200%
+                                                                                                                       }
+                                                                                                                       .navbar .nav-item:hover .dropdown-menu {
+                                                                                                                           top: 100%;
+                                                                                                                           transform: rotateX(0deg);
+                                                                                                                           visibility: visible;
+                                                                                                                           transition: .5s;
+                                                                                                                           opacity: 1
+                                                                                                                       }
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .carousel-caption {
+                                                                                                                       top: 0;
+                                                                                                                       left: 0;
+                                                                                                                       right: 0;
+                                                                                                                       bottom: 0;
+                                                                                                                       background: rgba(15, 23, 43, .7);
+                                                                                                                       z-index: 1
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .carousel-control-prev,
+                                                                                                                   .carousel-control-next {
+                                                                                                                       width: 10%
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .carousel-control-prev-icon,
+                                                                                                                   .carousel-control-next-icon {
+                                                                                                                       width: 3rem;
+                                                                                                                       height: 3rem
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   @media(max-width:768px) {
+                                                                                                                       #header-carousel .carousel-item,
+                                                                                                                       .header-carousel .owl-carousel-item {
+                                                                                                                           position: relative;
+                                                                                                                           min-height: 450px
+                                                                                                                       }
+                                                                                                                       #header-carousel .carousel-item img,
+                                                                                                                       .header-carousel .owl-carousel-item img {
+                                                                                                                           position: absolute;
+                                                                                                                           width: 100%;
+                                                                                                                           height: 100%;
+                                                                                                                           object-fit: cover
+                                                                                                                       }
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .header-carousel .owl-nav {
+                                                                                                                       position: absolute;
+                                                                                                                       top: 50%;
+                                                                                                                       right: 8%;
+                                                                                                                       transform: translateY(-50%);
+                                                                                                                       display: flex;
+                                                                                                                       flex-direction: column
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .header-carousel .owl-nav .owl-prev,
+                                                                                                                   .header-carousel .owl-nav .owl-next {
+                                                                                                                       margin: 7px 0;
+                                                                                                                       width: 45px;
+                                                                                                                       height: 45px;
+                                                                                                                       display: flex;
+                                                                                                                       align-items: center;
+                                                                                                                       justify-content: center;
+                                                                                                                       color: #fff;
+                                                                                                                       background: 0 0;
+                                                                                                                       border: 1px solid #fff;
+                                                                                                                       border-radius: 2px;
+                                                                                                                       font-size: 22px;
+                                                                                                                       transition: .5s
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .header-carousel .owl-nav .owl-prev:hover,
+                                                                                                                   .header-carousel .owl-nav .owl-next:hover {
+                                                                                                                       background: var(--primary);
+                                                                                                                       border-color: var(--primary)
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .header-carousel .owl-dots {
+                                                                                                                       position: absolute;
+                                                                                                                       left: 50%;
+                                                                                                                       bottom: 45px;
+                                                                                                                       transform: translateX(-50%);
+                                                                                                                       display: flex;
+                                                                                                                       align-items: flex-end;
+                                                                                                                       justify-content: center
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .header-carousel .owl-dot {
+                                                                                                                       position: relative;
+                                                                                                                       display: inline-block;
+                                                                                                                       margin: 0 5px;
+                                                                                                                       width: 15px;
+                                                                                                                       height: 15px;
+                                                                                                                       border: 1px solid #fff;
+                                                                                                                       border-radius: 2px;
+                                                                                                                       transition: .5s
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .header-carousel .owl-dot.active {
+                                                                                                                       /* height: 30px; */
+                                                                                                                       background: var(--primary);
+                                                                                                                       border-color: var(--primary)
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .page-header {
+                                                                                                                       background-position: center center;
+                                                                                                                       background-repeat: no-repeat;
+                                                                                                                       background-size: cover;
+                                                                                                                       height: 400px;
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .page-header-inner {
+                                                                                                                       background: rgba(15, 23, 43, .5);
+                                                                                                                       height: 400px;
+                                                                                                                       padding-top: 100px !important;
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .page-header-inner-asep {
+                                                                                                                       background: rgba(15, 23, 43, .5);
+                                                                                                                       height: 400px;
+                                                                                                                       padding-top: 100px !important;
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .breadcrumb-item+.breadcrumb-item::before {
+                                                                                                                       color: var(--light)
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .booking {
+                                                                                                                       position: relative;
+                                                                                                                       margin-top: -100px!important;
+                                                                                                                       z-index: 1
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .section-title {
+                                                                                                                       position: relative;
+                                                                                                                       display: inline-block
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .section-title::before {
+                                                                                                                       position: absolute;
+                                                                                                                       content: "";
+                                                                                                                       width: 45px;
+                                                                                                                       height: 2px;
+                                                                                                                       top: 50%;
+                                                                                                                       left: -55px;
+                                                                                                                       margin-top: -1px;
+                                                                                                                       background: var(--primary)
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .section-title::after {
+                                                                                                                       position: absolute;
+                                                                                                                       content: "";
+                                                                                                                       width: 45px;
+                                                                                                                       height: 2px;
+                                                                                                                       top: 50%;
+                                                                                                                       right: -55px;
+                                                                                                                       margin-top: -1px;
+                                                                                                                       background: var(--primary)
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .section-title.text-start::before,
+                                                                                                                   .section-title.text-end::after {
+                                                                                                                       display: none
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .feature-title {
+                                                                                                                       position: absolute;
+                                                                                                                       content: "";
+                                                                                                                       width: 100%;
+                                                                                                                       height: 100%;
+                                                                                                                       top: 0;
+                                                                                                                       left: 0;
+                                                                                                                       display: flex;
+                                                                                                                       flex-direction: column;
+                                                                                                                       align-items: center;
+                                                                                                                       justify-content: center;
+                                                                                                                       background: rgba(15, 23, 43, .3);
+                                                                                                                       transition: .5s
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .feature-item:hover .feature-title {
+                                                                                                                       top: 100%
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .feature-item .feature-text {
+                                                                                                                       position: absolute;
+                                                                                                                       content: "";
+                                                                                                                       top: -100%;
+                                                                                                                       left: 0;
+                                                                                                                       width: 100%;
+                                                                                                                       height: 100%;
+                                                                                                                       padding: 30px;
+                                                                                                                       background: rgba(15, 23, 43, .7);
+                                                                                                                       display: flex;
+                                                                                                                       align-items: center;
+                                                                                                                       transition: .5s
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .feature-item:hover .feature-text {
+                                                                                                                       top: 0
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .feature-item .feature-text p {
+                                                                                                                       opacity: 0;
+                                                                                                                       transition: .5s
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .feature-item:hover .feature-text p {
+                                                                                                                       opacity: 1;
+                                                                                                                       transition-delay: .5s
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .room-item {
+                                                                                                                       /* box-shadow: 0 0 45px rgba(0, 0, 0, .08) */
+                                                                                                                       box-shadow: 0px 0px 10px gray;
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .nav-pills .nav-item .active {
+                                                                                                                       border-bottom: 2px solid var(--primary)
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .service-item {
+                                                                                                                       /* height: 320px; */
+                                                                                                                       padding: 30px;
+                                                                                                                       display: flex;
+                                                                                                                       flex-direction: column;
+                                                                                                                       justify-content: center;
+                                                                                                                       /* background: #fff; */
+                                                                                                                       box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+                                                                                                                       transition: .5s;
+                                                                                                                       width: 100%;
+                                                                                                                       background-position: center;
+                                                                                                                       background-size: cover;
+                                                                                                                       background-repeat: no-repeat;
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .service-item1 {
+                                                                                                                       background: url('../img/images/pipe/pipe_bg1.jpg');
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .service-item2 {
+                                                                                                                       background: url('../img/images/pipe/pipe_bg2.jpg');
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .service-item:hover {
+                                                                                                                       /* background: var(--primary) */
+                                                                                                                       /* background: #848688; */
+                                                                                                                       background: #2565a5;
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .service-item:hover .btn-primary-up {
+                                                                                                                       background-color: #fff;
+                                                                                                                       border: 1px solid #0c2e61;
+                                                                                                                       color: #0c2e61;
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .service-item .service-icon {
+                                                                                                                       /* width: 65px;
+    height: 65px; */
+                                                                                                                       width: 100%;
+                                                                                                                       transition: .5s
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .btn-primary-up {
+                                                                                                                       background-color: #0c2e61;
+                                                                                                                       border: 1px solid #0c2e61;
+                                                                                                                       color: #fff;
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .service-item i,
+                                                                                                                   .service-item h5,
+                                                                                                                   .service-item p {
+                                                                                                                       transition: .5s
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .service-item:hover i,
+                                                                                                                   .service-item:hover h5,
+                                                                                                                   .service-item:hover p {
+                                                                                                                       color: #fff!important
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .video {
+                                                                                                                       position: relative;
+                                                                                                                       height: 100%;
+                                                                                                                       min-height: 500px;
+                                                                                                                       background: linear-gradient(rgba(15, 23, 43, .1), rgba(15, 23, 43, .1)), url(../img/video.jpg);
+                                                                                                                       background-position: center center;
+                                                                                                                       background-repeat: no-repeat;
+                                                                                                                       background-size: cover
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .video .btn-play {
+                                                                                                                       position: absolute;
+                                                                                                                       z-index: 3;
+                                                                                                                       top: 50%;
+                                                                                                                       left: 50%;
+                                                                                                                       transform: translateX(-50%) translateY(-50%);
+                                                                                                                       box-sizing: content-box;
+                                                                                                                       display: block;
+                                                                                                                       width: 32px;
+                                                                                                                       height: 44px;
+                                                                                                                       border-radius: 50%;
+                                                                                                                       border: none;
+                                                                                                                       outline: none;
+                                                                                                                       padding: 18px 20px 18px 28px
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .video .btn-play:before {
+                                                                                                                       content: "";
+                                                                                                                       position: absolute;
+                                                                                                                       z-index: 0;
+                                                                                                                       left: 50%;
+                                                                                                                       top: 50%;
+                                                                                                                       transform: translateX(-50%) translateY(-50%);
+                                                                                                                       display: block;
+                                                                                                                       width: 100px;
+                                                                                                                       height: 100px;
+                                                                                                                       background: var(--primary);
+                                                                                                                       border-radius: 50%;
+                                                                                                                       animation: pulse-border 1500ms ease-out infinite
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .video .btn-play:after {
+                                                                                                                       content: "";
+                                                                                                                       position: absolute;
+                                                                                                                       z-index: 1;
+                                                                                                                       left: 50%;
+                                                                                                                       top: 50%;
+                                                                                                                       transform: translateX(-50%) translateY(-50%);
+                                                                                                                       display: block;
+                                                                                                                       width: 100px;
+                                                                                                                       height: 100px;
+                                                                                                                       background: var(--primary);
+                                                                                                                       border-radius: 50%;
+                                                                                                                       transition: all 200ms
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .video .btn-play img {
+                                                                                                                       position: relative;
+                                                                                                                       z-index: 3;
+                                                                                                                       max-width: 100%;
+                                                                                                                       width: auto;
+                                                                                                                       height: auto
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .video .btn-play span {
+                                                                                                                       display: block;
+                                                                                                                       position: relative;
+                                                                                                                       z-index: 3;
+                                                                                                                       width: 0;
+                                                                                                                       height: 0;
+                                                                                                                       border-left: 32px solid var(--dark);
+                                                                                                                       border-top: 22px solid transparent;
+                                                                                                                       border-bottom: 22px solid transparent
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   @keyframes pulse-border {
+                                                                                                                       0% {
+                                                                                                                           transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+                                                                                                                           opacity: 1
+                                                                                                                       }
+                                                                                                                       100% {
+                                                                                                                           transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+                                                                                                                           opacity: 0
+                                                                                                                       }
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   #videoModal {
+                                                                                                                       z-index: 99999
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   #videoModal .modal-dialog {
+                                                                                                                       position: relative;
+                                                                                                                       max-width: 800px;
+                                                                                                                       margin: 60px auto 0
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   #videoModal .modal-body {
+                                                                                                                       position: relative;
+                                                                                                                       padding: 0
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   #videoModal .close {
+                                                                                                                       position: absolute;
+                                                                                                                       width: 30px;
+                                                                                                                       height: 30px;
+                                                                                                                       right: 0;
+                                                                                                                       top: -30px;
+                                                                                                                       z-index: 999;
+                                                                                                                       font-size: 30px;
+                                                                                                                       font-weight: 400;
+                                                                                                                       color: #fff;
+                                                                                                                       background: #000;
+                                                                                                                       opacity: 1
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .team-item {
+                                                                                                                       box-shadow: 0 0 45px rgba(0, 0, 0, .08)
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .testimonial {
+                                                                                                                       background: linear-gradient(rgba(15, 23, 43, .7), rgba(15, 23, 43, .7)), url(../img/carousel-2.jpg);
+                                                                                                                       background-position: center center;
+                                                                                                                       background-repeat: no-repeat;
+                                                                                                                       background-size: cover
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .testimonial-carousel {
+                                                                                                                       padding-left: 65px;
+                                                                                                                       padding-right: 65px
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .testimonial-carousel .testimonial-item {
+                                                                                                                       padding: 30px
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .testimonial-carousel .owl-nav,
+                                                                                                                   .testimonial-carousel-center .owl-nav {
+                                                                                                                       position: absolute;
+                                                                                                                       width: 100%;
+                                                                                                                       height: 40px;
+                                                                                                                       top: calc(50% - 20px);
+                                                                                                                       left: 0;
+                                                                                                                       display: flex;
+                                                                                                                       justify-content: space-between;
+                                                                                                                       z-index: 1
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .testimonial-carousel .owl-nav .owl-prev,
+                                                                                                                   .testimonial-carousel .owl-nav .owl-next,
+                                                                                                                   .testimonial-carousel-center .owl-nav .owl-prev,
+                                                                                                                   .testimonial-carousel-center .owl-nav .owl-next {
+                                                                                                                       position: relative;
+                                                                                                                       width: 40px;
+                                                                                                                       height: 40px;
+                                                                                                                       display: flex;
+                                                                                                                       align-items: center;
+                                                                                                                       justify-content: center;
+                                                                                                                       color: #fff;
+                                                                                                                       /* background: var(--primary); */
+                                                                                                                       background: #2565a5;
+                                                                                                                       border-radius: 2px;
+                                                                                                                       font-size: 18px;
+                                                                                                                       transition: .5s
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .testimonial-carousel .owl-nav .owl-prev:hover,
+                                                                                                                   .testimonial-carousel .owl-nav .owl-next:hover,
+                                                                                                                   .testimonial-carousel-center .owl-nav .owl-prev:hover,
+                                                                                                                   .testimonial-carousel-center .owl-nav .owl-next:hover {
+                                                                                                                       color: var(--primary);
+                                                                                                                       background: #fff
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .testimonial-carousel-center .owl-nav {
+                                                                                                                       width: 350px;
+                                                                                                                       top: 0;
+                                                                                                                       left: 50%;
+                                                                                                                       transform: translateX(-50%);
+                                                                                                                       opacity: 0;
+                                                                                                                       transition: .5s
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .testimonial-carousel-center:hover .owl-nav {
+                                                                                                                       width: 300px;
+                                                                                                                       opacity: 1
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .testimonial-carousel-center .owl-nav .owl-prev:hover,
+                                                                                                                   .testimonial-carousel-center .owl-nav .owl-next:hover {
+                                                                                                                       color: var(--primary);
+                                                                                                                       background: var(--dark)
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .testimonial-carousel-center .owl-item .testimonial-text {
+                                                                                                                       box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+                                                                                                                       transform: scale(.8);
+                                                                                                                       transition: .5s
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .testimonial-carousel-center .owl-item.center .testimonial-text {
+                                                                                                                       box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+                                                                                                                       transform: scale(1)
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .blog-item {
+                                                                                                                       box-shadow: 0 0 45px rgba(0, 0, 0, .08)
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .blog-item img {
+                                                                                                                       transition: .5s
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .blog-item:hover img {
+                                                                                                                       transform: scale(1.1)
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .related-carousel .owl-nav {
+                                                                                                                       position: absolute;
+                                                                                                                       width: 76px;
+                                                                                                                       top: -52px;
+                                                                                                                       right: 0;
+                                                                                                                       display: flex
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .related-carousel .owl-nav .owl-prev,
+                                                                                                                   .related-carousel .owl-nav .owl-next {
+                                                                                                                       margin-left: 10px;
+                                                                                                                       width: 28px;
+                                                                                                                       height: 28px;
+                                                                                                                       display: flex;
+                                                                                                                       align-items: center;
+                                                                                                                       justify-content: center;
+                                                                                                                       color: var(--dark);
+                                                                                                                       background: var(--primary);
+                                                                                                                       font-size: 14px;
+                                                                                                                       transition: .3s
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .related-carousel .owl-nav .owl-prev:hover,
+                                                                                                                   .related-carousel .owl-nav .owl-next:hover {
+                                                                                                                       color: var(--primary);
+                                                                                                                       background: var(--dark)
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .category-list a {
+                                                                                                                       position: relative;
+                                                                                                                       padding-left: 10px;
+                                                                                                                       overflow: hidden;
+                                                                                                                       transition: .5s
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .category-list a::before {
+                                                                                                                       position: relative;
+                                                                                                                       content: "\f105";
+                                                                                                                       font-family: "font awesome 5 free";
+                                                                                                                       font-weight: 900;
+                                                                                                                       color: var(--primary);
+                                                                                                                       margin-right: 10px;
+                                                                                                                       transition: .5s
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .category-list a::after {
+                                                                                                                       position: absolute;
+                                                                                                                       content: "";
+                                                                                                                       width: 25px;
+                                                                                                                       height: 2px;
+                                                                                                                       top: 50%;
+                                                                                                                       left: -11px;
+                                                                                                                       margin-top: -1px;
+                                                                                                                       background: var(--primary);
+                                                                                                                       transition: .5s
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .category-list a:hover {
+                                                                                                                       padding-left: 21px;
+                                                                                                                       color: var(--primary)!important
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .category-list a:hover::after {
+                                                                                                                       left: 0
+                                                                                                                   }
+                                                                                                                   /* .fact {
+    background: linear-gradient(rgba(15, 23, 43, .7), rgba(15, 23, 43, .7)), url(../img/images/bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover
+} */
+                                                                                                                   
+                                                                                                                   .fact .border {
+                                                                                                                       border-color: rgba(256, 256, 256, .2)!important
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .fact .border .border {
+                                                                                                                       border-color: rgba(256, 256, 256, .3)!important
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   #portfolio-flters .btn {
+                                                                                                                       position: relative;
+                                                                                                                       display: inline-block;
+                                                                                                                       text-transform: capitalize;
+                                                                                                                       font-weight: 400;
+                                                                                                                       margin: 3px;
+                                                                                                                       transition: .5s
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   #portfolio-flters .btn:hover,
+                                                                                                                   #portfolio-flters .btn.active {
+                                                                                                                       color: #fff!important
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .portfolio-item img {
+                                                                                                                       transition: .5s
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .portfolio-item:hover img {
+                                                                                                                       transform: scale(1.1)
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .portfolio-btn {
+                                                                                                                       position: absolute;
+                                                                                                                       width: 100%;
+                                                                                                                       height: 100%;
+                                                                                                                       top: 0;
+                                                                                                                       left: 0;
+                                                                                                                       display: flex;
+                                                                                                                       align-items: center;
+                                                                                                                       justify-content: center;
+                                                                                                                       background: rgba(15, 23, 43, .3);
+                                                                                                                       transition: .5s;
+                                                                                                                       opacity: 0
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .portfolio-item:hover .portfolio-btn {
+                                                                                                                       opacity: 1
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .portfolio-btn a {
+                                                                                                                       margin-top: 50px;
+                                                                                                                       font-size: 22px
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .portfolio-item:hover .portfolio-btn a {
+                                                                                                                       margin-top: 0
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .contact-form .help-block ul {
+                                                                                                                       margin: 0;
+                                                                                                                       padding: 0;
+                                                                                                                       list-style-type: none
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .accordion-custom .accordion-item {
+                                                                                                                       margin-bottom: 15px;
+                                                                                                                       border-color: rgba(0, 0, 0, .02)
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .accordion-custom .accordion-item:not(:first-of-type) {
+                                                                                                                       border-top: 1px solid rgba(0, 0, 0, .02)
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .accordion-custom .accordion-button {
+                                                                                                                       font-weight: 500!important;
+                                                                                                                       background: #fff;
+                                                                                                                       transition: .5s
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .accordion-custom .accordion-button:not(.collapsed) {
+                                                                                                                       color: #fff;
+                                                                                                                       background: var(--primary);
+                                                                                                                       box-shadow: none
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .accordion-custom .accordion-button:not(.collapsed)::after {
+                                                                                                                       background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAxNiAxNicgZmlsbD0nI2ZmZic+PHBhdGggZmlsbC1ydWxlPSdldmVub2RkJyBkPSdNMS42NDYgNC42NDZhLjUuNSAwIDAgMSAuNzA4IDBMOCAxMC4yOTNsNS42NDYtNS42NDdhLjUuNSAwIDAgMSAuNzA4LjcwOGwtNiA2YS41LjUgMCAwIDEtLjcwOCAwbC02LTZhLjUuNSAwIDAgMSAwLS43MDh6Jy8+PC9zdmc+)
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .accordion-custom .accordion-body {
+                                                                                                                       padding: 20px;
+                                                                                                                       background: #fff
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .newsletter {
+                                                                                                                       position: relative;
+                                                                                                                       z-index: 1
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .footer {
+                                                                                                                       position: relative;
+                                                                                                                       /* margin-top: -110px;
+    padding-top: 180px */
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .footer .btn.btn-social {
+                                                                                                                       margin-right: 5px;
+                                                                                                                       width: 35px;
+                                                                                                                       height: 35px;
+                                                                                                                       display: flex;
+                                                                                                                       align-items: center;
+                                                                                                                       justify-content: center;
+                                                                                                                       color: var(--light);
+                                                                                                                       border: 1px solid #fff;
+                                                                                                                       border-radius: 35px;
+                                                                                                                       transition: .3s
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .footer .btn.btn-social:hover {
+                                                                                                                       color: var(--primary)
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .footer .btn.btn-link {
+                                                                                                                       display: block;
+                                                                                                                       margin-bottom: 5px;
+                                                                                                                       padding: 0;
+                                                                                                                       text-align: left;
+                                                                                                                       color: #fff;
+                                                                                                                       font-size: 15px;
+                                                                                                                       font-weight: 400;
+                                                                                                                       text-transform: capitalize;
+                                                                                                                       transition: .3s
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .footer .btn.btn-link::before {
+                                                                                                                       position: relative;
+                                                                                                                       content: "\f105";
+                                                                                                                       font-family: "font awesome 5 free";
+                                                                                                                       font-weight: 900;
+                                                                                                                       margin-right: 10px
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .footer .btn.btn-link:hover {
+                                                                                                                       letter-spacing: 1px;
+                                                                                                                       box-shadow: none
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .footer .copyright {
+                                                                                                                       padding: 25px 0;
+                                                                                                                       font-size: 15px;
+                                                                                                                       border-top: 1px solid rgba(256, 256, 256, .1)
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .footer .copyright a {
+                                                                                                                       color: var(--light)
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .footer .footer-menu a {
+                                                                                                                       margin-right: 15px;
+                                                                                                                       padding-right: 15px;
+                                                                                                                       border-right: 1px solid rgba(255, 255, 255, .3)
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .footer .footer-menu a:last-child {
+                                                                                                                       margin-right: 0;
+                                                                                                                       padding-right: 0;
+                                                                                                                       border-right: none
+                                                                                                                   }
+                                                                                                                   /* my css start */
+                                                                                                                   
+                                                                                                                   .mx-auto-left {
+                                                                                                                       margin-left: auto;
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .bg-color-main {
+                                                                                                                       background-color: #00afef;
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .num-email {
+                                                                                                                       padding: 0.5rem;
+                                                                                                                       margin-left: 25px;
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .align-items-center {
+                                                                                                                       align-items: center !important;
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .d-inline-flex {
+                                                                                                                       display: inline-flex !important;
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .my_color .btn-primary {
+                                                                                                                       /* background-color: #2565a5; */
+                                                                                                                       background-color: #0c2e61;
+                                                                                                                       border: 1px solid #0c2e61;
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .my_color .text-primary {
+                                                                                                                       color: #0c2e61 !important;
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .my_color .border-primary {
+                                                                                                                       border-color: #2565A5 !important;
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .product_heading {
+                                                                                                                       color: #2565a5;
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .bg_custom {
+                                                                                                                       background-color: #fff;
+                                                                                                                       margin-bottom: 11px;
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .btn-primary-blue {
+                                                                                                                       background-color: #0099DF;
+                                                                                                                       border: 1px solid #0099DF;
+                                                                                                                       color: #fff;
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .text-primary-white {
+                                                                                                                       color: #fff;
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .text_justify {
+                                                                                                                       text-align: justify;
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .bg-primary-blue {
+                                                                                                                       background-color: #0098DA !important;
+                                                                                                                       letter-spacing: 1px;
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .top_position {
+                                                                                                                       position: relative;
+                                                                                                                       top: 57px;
+                                                                                                                   }
+                                                                                                                   /* less paragraph css */
+                                                                                                                   
+                                                                                                                   .btn-primary-blue:hover {
+                                                                                                                       background-color: #fff;
+                                                                                                                       border: 1px solid #0099DF;
+                                                                                                                       color: #0099DF;
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .para_color {
+                                                                                                                       color: #000;
+                                                                                                                       text-decoration: none;
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .page-header-inner-1 {
+                                                                                                                       background: rgba(15, 23, 43, .2);
+                                                                                                                       height: 400px;
+                                                                                                                       padding-top: 100px;
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .dairySegBg {
+                                                                                                                       background-color: #90c4e9;
+                                                                                                                       background-position: center;
+                                                                                                                       background-repeat: no-repeat;
+                                                                                                                       background-size: cover;
+                                                                                                                       width: 200px;
+                                                                                                                       padding: 1px 0px;
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .beveragesSegBg {
+                                                                                                                       background-color: #ff977e;
+                                                                                                                       background-position: center;
+                                                                                                                       background-repeat: no-repeat;
+                                                                                                                       background-size: cover;
+                                                                                                                       width: 200px;
+                                                                                                                       padding: 1px 0px;
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .cosmeticsSegBg {
+                                                                                                                       background-color: #03cec2;
+                                                                                                                       background-position: center;
+                                                                                                                       background-repeat: no-repeat;
+                                                                                                                       background-size: cover;
+                                                                                                                       width: 200px;
+                                                                                                                       padding: 1px 0px;
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .fruitSegBg {
+                                                                                                                       background-color: #bdc157;
+                                                                                                                       background-position: center;
+                                                                                                                       background-repeat: no-repeat;
+                                                                                                                       background-size: cover;
+                                                                                                                       width: 200px;
+                                                                                                                       padding: 1px 0px;
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .footer_four img {
+                                                                                                                       width: 70%;
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .fruitSegBg a h6 {
+                                                                                                                       color: #bd6a56;
+                                                                                                                       font-family: 'Raleway-Bold.eot';
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .beveragesSegBg a h6 {
+                                                                                                                       color: #bd6a56;
+                                                                                                                       font-family: 'Raleway-Bold.eot';
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .cosmeticsSegBg a h6 {
+                                                                                                                       color: #0f716b;
+                                                                                                                       font-family: 'Raleway-Medium';
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .dairySegBg a h6 {
+                                                                                                                       color: #6193B6;
+                                                                                                                       font-family: 'Raleway-Medium';
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .hover-scale .seg-scale1 {
+                                                                                                                       transition: 2s all ease-in-out;
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .hover-scale:hover .seg-scale1 {
+                                                                                                                       margin-top: -61px !important;
+                                                                                                                       margin-bottom: 40px !important;
+                                                                                                                       transition: all 0.5s;
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .width_row {
+                                                                                                                       width: 80%;
+                                                                                                                       margin: 0 auto;
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .bottom1,
+                                                                                                                   .bottom2,
+                                                                                                                   .bottom3,
+                                                                                                                   .bottom3,
+                                                                                                                   .bottom4 {
+                                                                                                                       background-position-x: 0%;
+                                                                                                                       background-position-y: 0%;
+                                                                                                                       background-repeat: repeat;
+                                                                                                                       background-size: auto;
+                                                                                                                       background-repeat: no-repeat;
+                                                                                                                       background-position: bottom;
+                                                                                                                       background-size: contain;
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .bottom1 {
+                                                                                                                       background: url('../img/images/background/bg_dairy.jpg');
+                                                                                                                       background-position-x: 0%;
+                                                                                                                       background-position-y: 0%;
+                                                                                                                       background-repeat: repeat;
+                                                                                                                       background-size: auto;
+                                                                                                                       background-repeat: no-repeat;
+                                                                                                                       background-position: bottom;
+                                                                                                                       background-size: contain;
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .bottom2 {
+                                                                                                                       background: url('../img/images/background/bg_juice.jpg');
+                                                                                                                       background-position-x: 0%;
+                                                                                                                       background-position-y: 0%;
+                                                                                                                       background-repeat: repeat;
+                                                                                                                       background-size: auto;
+                                                                                                                       background-repeat: no-repeat;
+                                                                                                                       background-position: bottom;
+                                                                                                                       background-size: contain;
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .bottom3 {
+                                                                                                                       background: url('../img/images/background/bg_cos.jpg');
+                                                                                                                       background-position-x: 0%;
+                                                                                                                       background-position-y: 0%;
+                                                                                                                       background-repeat: repeat;
+                                                                                                                       background-size: auto;
+                                                                                                                       background-repeat: no-repeat;
+                                                                                                                       background-position: bottom;
+                                                                                                                       background-size: contain;
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .bottom4 {
+                                                                                                                       background: url('../img/images/background/bg_alice.jpg');
+                                                                                                                       background-position-x: 0%;
+                                                                                                                       background-position-y: 0%;
+                                                                                                                       background-repeat: repeat;
+                                                                                                                       background-size: auto;
+                                                                                                                       background-repeat: no-repeat;
+                                                                                                                       background-position: bottom;
+                                                                                                                       background-size: contain;
+                                                                                                                   }
+                                                                                                                   /* home page carousel start */
+                                                                                                                   
+                                                                                                                   .testimonial-content .owl-nav {
+                                                                                                                       width: 100%;
+                                                                                                                       text-align: center;
+                                                                                                                       margin-top: 11px;
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .testimonial-content .owl-prev,
+                                                                                                                   .testimonial-content .owl-next {
+                                                                                                                       position: relative;
+                                                                                                                       width: 40px;
+                                                                                                                       height: 40px;
+                                                                                                                       color: #fff;
+                                                                                                                       background: var(--primary);
+                                                                                                                       background: #2565a5;
+                                                                                                                       border-radius: 2px;
+                                                                                                                       font-size: 18px;
+                                                                                                                       transition: .5s;
+                                                                                                                       border: none;
+                                                                                                                       outline: none;
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .testimonial-content .owl-prev {
+                                                                                                                       margin-right: 5px;
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .testimonial-content .owl-next {
+                                                                                                                       margin-left: 5px;
+                                                                                                                   }
+                                                                                                                   /*my carouser start */
+                                                                                                                   
+                                                                                                                   .blueBg {
+                                                                                                                       background: #0e7aa1;
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .spacing {
+                                                                                                                       padding: 5em 0;
+                                                                                                                       position: relative;
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .text-justify-p {
+                                                                                                                       text-align: justify;
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   marquee {
+                                                                                                                       color: #fea116;
+                                                                                                                       font-size: 30px;
+                                                                                                                       text-align: center;
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .text_justify {
+                                                                                                                       text-align: justify;
+                                                                                                                       word-spacing: -2px;
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .img_space {
+                                                                                                                       padding: 0 1px;
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .turkey_heading {
+                                                                                                                       position: absolute;
+                                                                                                                       top: 15px;
+                                                                                                                       font-size: 29px;
+                                                                                                                       font-weight: initial;
+                                                                                                                       background: #fff;
+                                                                                                                       width: 100%;
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .bg_secondy {
+                                                                                                                       background: #0098DA;
+                                                                                                                       padding-left: 20px;
+                                                                                                                       color: #fff !important;
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .navbar-dark .navbar-nav .nav-link,
+                                                                                                                   .navbar-light .navbar-nav .nav-link.bg_secondy {
+                                                                                                                       padding: 25px 13px;
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .text_center {
+                                                                                                                       display: inline-block;
+                                                                                                                       text-align: center;
+                                                                                                                       margin: 0 auto;
+                                                                                                                       display: grid;
+                                                                                                                       place-items: center;
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .text_center a {
+                                                                                                                       text-align: center;
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .bg_primary {
+                                                                                                                       background-color: #1a4672 !important;
+                                                                                                                       color: #fff;
+                                                                                                                       border-radius: 45px 0;
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .bg_primary.text-dark {
+                                                                                                                       color: #fff;
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .text_white a {
+                                                                                                                       color: #fff;
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .text_white a:hover {
+                                                                                                                       color: var(--primary);
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   h6.big_size {
+                                                                                                                       font-size: 30px;
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .padd_same {
+                                                                                                                       padding: 100px 0;
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .bordr_radius a {
+                                                                                                                       border-radius: 100%;
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .frent_heading {
+                                                                                                                       font-size: 15px;
+                                                                                                                       text-transform: uppercase;
+                                                                                                                       font-weight: 600;
+                                                                                                                       color: #0d2f62;
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .font_headi_baner {
+                                                                                                                       text-transform: uppercase;
+                                                                                                                       font-size: 3rem;
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   marquee {
+                                                                                                                       font-family: "Montserrat", sans-serif;
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .modal-content {
+                                                                                                                       background: linear-gradient(to bottom, rgba(0, 175, 239, 0.9), rgba(18, 216, 250, 0.9), rgba(31, 162, 255, 0.9));
+                                                                                                                       color: black !important;
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .modal-content .modal-title {
+                                                                                                                       color: #fff;
+                                                                                                                       text-transform: uppercase;
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .mar_right {
+                                                                                                                       margin-left: 27px;
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .pdd_t {
+                                                                                                                       padding-top: 10px;
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .bg_aseptic {
+                                                                                                                       background: #eee;
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .page-header-inner.no_background_color {
+                                                                                                                       background: transparent !important;
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .overlay {
+                                                                                                                       position: relative;
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .overlay::after {
+                                                                                                                       content: ' ';
+                                                                                                                       position: absolute;
+                                                                                                                       top: 0;
+                                                                                                                       right: 0;
+                                                                                                                       bottom: 0;
+                                                                                                                       left: 0;
+                                                                                                                       z-index: 2;
+                                                                                                                       background: #515c60;
+                                                                                                                       opacity: 0;
+                                                                                                                       pointer-events: none;
+                                                                                                                       -webkit-transition: ease opacity 300ms 100ms;
+                                                                                                                       transition: ease opacity 300ms 100ms;
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .overlay:hover::before,
+                                                                                                                   .overlay.overlay-show::before,
+                                                                                                                   .overlay.show::before {
+                                                                                                                       opacity: 0.8;
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .ser .service-item {
+                                                                                                                       position: relative;
+                                                                                                                       color: #fff;
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .ser .service-item::after {
+                                                                                                                       position: absolute;
+                                                                                                                       content: "";
+                                                                                                                       left: 0;
+                                                                                                                       top: 0;
+                                                                                                                       width: 100%;
+                                                                                                                       height: 100%;
+                                                                                                                       background-color: #515c60;
+                                                                                                                       opacity: 0.5;
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .ser .service-item:hover {
+                                                                                                                       background-color: #515c60;
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .w_image {
+                                                                                                                       position: absolute;
+                                                                                                                       z-index: 1;
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .w_image1 {
+                                                                                                                       color: #fff;
+                                                                                                                       opacity: 0.9;
+                                                                                                                       position: relative;
+                                                                                                                       z-index: 111111;
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .border_own {
+                                                                                                                       border: 4px solid gray;
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .color_black {
+                                                                                                                       color: #000;
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .color_hed_tur {
+                                                                                                                       color: #0c2e61;
+                                                                                                                       font-size: 20px;
+                                                                                                                       font-weight: 600;
+                                                                                                                       text-transform: uppercase;
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .sub_color_black {
+                                                                                                                       color: #000;
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .style_subheding {
+                                                                                                                       font-weight: 600;
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .bold_size {
+                                                                                                                       font-weight: bold;
+                                                                                                                       font-size: 23px;
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .page-header-inner.page-header-inner_contact {
+                                                                                                                       background: rgba(15, 23, 43, .2);
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .page-header-inner.page-header-inner_carier {
+                                                                                                                       background: rgba(15, 23, 43, .3);
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .text-white {
+                                                                                                                       color: #0098DA;
+                                                                                                                   }
+                                                                                                                   
+                                                                                                                   .img_height {
+                                                                                                                       height: 100%;
+                                                                                                                   }
+                                                                                                                   .for_box_shadow{
+                                                                                                                       box-shadow: 0px 0px 10px grey !important;
+                                                                                                                       -webkit-box-shadow: 0px 0px 10px grey !important;
+                                                                                                                       -moz-box-shadow: 0px 0px 10px grey !important;
+                                                                                                                        padding: 10px;
+                                                                                                                   }
