@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Puraleite</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <link href="img/images/fevi.png" rel="icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+    
+            <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-10996735564"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-10996735564');
+</script>
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0 my_color">
+
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+            <a href="index.html" class="navbar-brand position-relative d-flex align-items-center text-center py-0 px-4 px-lg-5">
+                <h1 class="m-0 text-white text-uppercase"><img src="img/images/logo4.png" alt=""></h1>
+            </a>
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+<span class="navbar-toggler-icon"></span>
+</button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav  mx-auto-left p-4 p-lg-0">
+                    <a href="index.html" class="nav-item nav-link ">Home</a>
+                    <a href="about.html" class="nav-item nav-link ">About</a>
+                    <a href="product.html" class="nav-item nav-link">Products</a>
+                    <a href="Global.html" class="nav-item nav-link">Global Presence</a>
+                    <a href="gallary.html" class="nav-item nav-link">Gallary</a>
+                    <a href="career.html" class="nav-item nav-link active">Career</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    <!-- Button trigger modal -->
+                    <a href="" class="nav-item nav-link bg_secondy pl-5 pr-5" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Enquiry
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- enquiry form start -->
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Enquiry Form</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="contactForm" novalidate="novalidate" action="enquiry.php" method="post">
+                            <div class="row gx-3">
+                                <div class="col-md-6 control-group">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" name="name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name">
+                                        <label for="name">Your Name</label>
+                                    </div>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="col-md-6 control-group">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" name="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email">
+                                        <label for="email">Your Email</label>
+                                    </div>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="col-12 control-group">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" name="subject" placeholder="Subject" required="required" data-validation-required-message="Please enter a subject">
+                                        <label for="subject">Subject</label>
+                                    </div>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="col-12 control-group">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" placeholder="Leave a message here" name="message" required="required" data-validation-required-message="Please enter your message" style="height: 150px"></textarea>
+                                        <label for="message">Message</label>
+                                    </div>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary w-100 py-3" type="submit" id="sendMessageButton">
+<span>Send Message</span>
+<div class="d-none spinner-border spinner-border-sm text-light ms-3" role="status"></div>
+</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- banner start -->
+
+        <div class="container-fluid page-header mb-5 p-0" style="background-image: url(img/images/resume.jpg);">
+            <div class="container-fluid page-header-inner page-header-inner_carier py-5">
+                <div class="container text-center pb-5">
+                    <h1 class="display-3 text-white mb-3 animated slideInDown">career</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center text-uppercase">
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">Career</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <!-- creer page end -->
+        <div class="container-xxl">
+            <div class="container">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                    <h1 class="section-title big_size text-center text-primary text-uppercase my-5"><span class="sub_color_black">Check out </span>our current job opportunities</h1>
+                </div>
+                <div class="row g-5">
+                    <div class="col-lg-6">
+                        <!-- <div class="row g-3">
+                            <div class="col-6 text-end">
+                                <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.1s" src="img/images/c1.jpg" style="margin-top: 25%; visibility: visible; animation-delay: 0.1s; animation-name: zoomIn;">
+                            </div>
+                            <div class="col-6 text-start">
+                                <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.3s" src="img/images/c3.jpg" style="visibility: visible; animation-delay: 0.3s; animation-name: zoomIn;">
+                            </div>
+                            <div class="col-6 text-end">
+                                <img class="img-fluid rounded w-50 wow zoomIn" data-wow-delay="0.5s" src="img/images/c2.jpg" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;">
+                            </div>
+                            <div class="col-6 text-start">
+                                <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.7s" src="img/images/c4.jpg" style="visibility: visible; animation-delay: 0.7s; animation-name: zoomIn;">
+                            </div>
+                        </div> -->
+                        <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.1s" src="img/images/c1.jpg" style=" visibility: visible; animation-delay: 0.1s; animation-name: zoomIn;">
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="wow fadeInUp " data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;   ">
+                              <form enctype="multipart/form-data" action="carrer.php" method="post" data-parsley-validate="" outocomplite="off">
+                                <div class="row gx-3">
+                                    <div class="col-md-6 control-group">
+                                        <div class="form-floating">
+                                       <input type="text" class="form-control" placeholder="First name" name="fname" required="">
+                                            <label for="name">First Name</label>
+                                        </div>
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    <div class="col-md-6 control-group">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" placeholder="Last name" name="lname" required="">
+                                            <label for="name">Last Name</label>
+                                        </div>
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+
+                                    <div class="col-md-6 control-group">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" placeholder="Phone No" name="phone" required="">
+                                            <label for="subject">Mobile</label>
+                                        </div>
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    <div class="col-md-6 control-group">
+                                        <div class="form-floating">
+                                            <input type="email" class="form-control" placeholder="Email Id" name="email" required="">
+                                            <label for="email">Your Email</label>
+                                        </div>
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    <div class="col-md-6 control-group">
+                                        <div class="form-floating">
+ <input type="text" class="form-control" placeholder="Education" name="education" required="">
+                                            <label for="subject">Education</label>
+                                        </div>
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    <div class="col-md-6 control-group">
+                                        <div class="form-floating">
+                                         <input type="text" class="form-control" placeholder="Work Experience" name="experience" required="">
+                                            <label for="subject">Experience years</label>
+                                        </div>
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                   
+                                    <div class="col-lg-6 col-sm-6  marginttop">
+                                        <div class="form-group">
+                                <input type="file" class="custom-file-inputt" id="validatedCustomFile" name="my_file" required="">
+                                <label class="custom-file-labell  m-l-15 mr-3" for="validatedCustomFile">  </label>
+                            </div>
+                                        <div class="col-12">
+
+                                            <button type="submit" name="submit" class="btn btn-secondary letter_space btn_success">Apply Now</button>
+                                        </div>
+                                    </div>
+                            </form>
+                          <!--=====================-->
+                          
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- creer page start -->
+        <div class="container-fluid bg-dark text-light footer wow fadeIn pt-5 mt-5" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">
+            <div class="container pb-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="rounded ">
+                            <a href="index.html">
+                                <img src="img/images/plogo.png" alt="logo_bottom" class="img-fluid bg_custom">
+                            </a>
+                            <p class="text-white mb-0"> “Turnkey solution provider for Dairy, Fruit and Beverages processing"</p>
+                            <div class="d-flex pt-2 ">
+                                <!-- <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a> -->
+                                <a class="btn btn-outline-light btn-social" href="https://ne-np.facebook.com/sachin.gogate.186"><i class="fab fa-facebook-f"></i></a>
+                                <!-- <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a> -->
+                                <a class="btn btn-outline-light btn-social" href="https://in.linkedin.com/in/sachin-gogate-40a03139"><i class="fab fa-linkedin-in"></i></a>
+                                <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i> </a>
+                                <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i> </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 text_white">
+                        <h6 class="section-title text-start text-white text-uppercase mb-4">Corporate Office</h6>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i># J32,S Block, MIDC, Bhosari,Pune 411026 Maharashtra(INDIA)</p>
+                        <p class="mb-2"><a href="tel:+919421844777"><i class="fa fa-phone-alt me-3"></i>+91 9421844777</a></p>
+                        <p class="mb-2"><a href="https://api.whatsapp.com/send/?phone=919604638469&amp;text=+Hi+How+Can+I+Help+You+&amp;type=phone_number&amp;app_absent=0"><i class="fab fa-whatsapp me-3"></i>+91 9604638469</a></p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i><a href="mailto:sachin@puraleite.com" class="__cf_email__" data-cfemail="85ecebe3eac5e0fde4e8f5e9e0abe6eae8">sachin@puraleite.com</a></p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i><a href="mailto:md@puraleite.com" class="__cf_email__" data-cfemail="85ecebe3eac5e0fde4e8f5e9e0abe6eae8">md@puraleite.com</a></p>
+
+                    </div>
+                    <div class="col-lg-5 col-md-12 ">
+                        <div class="row gy-5 g-4 my_color ">
+                            <div class="col-md-6">
+                                <h6 class="section-title text-start text-white text-uppercase mb-4">Quick Link</h6>
+                                <a class="btn btn-link" href="about.html">About Us</a>
+                                <a class="btn btn-link" href="product.html">Products</a>
+                                <a class="btn btn-link" href="Global.html">Global Presence</a>
+                                <a class="btn btn-link" href="gallary.html">Gallary</a>
+                                <a class="btn btn-link" href="career.html">Career</a>
+                                <a class="btn btn-link" href="contact.html">Contact</a>
+
+                            </div>
+                            <div class="col-md-6">
+                                <h6 class="section-title text-start text-white text-uppercase mb-4">Services</h6>
+                                <a class="btn btn-link" href="dairy.html"> processing of Dairy</a>
+                                <a class="btn btn-link" href="beverage.html">Beverages</a>
+                                <a class="btn btn-link" href="cosmetic.html">Cosmetics</a>
+                                <a class="btn btn-link" href="alise.html"> Allied Industries</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            © Puraleite 2022
+                            <a class="border-bottom" href="#"> </a>, All Right Reserved. Designed By <a class="border-bottom" href="http://vedhindia.com/">VEDH</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="# " class="btn btn-lg btn-primary btn-lg-square back-to-top "><i class="bi bi-arrow-up "></i></a>
+        <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" type="b43bf35e4377408a12f5b4e3-text/javascript"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" type="b43bf35e4377408a12f5b4e3-text/javascript"></script>
+        <script src="lib/wow/wow.min.js" type="b43bf35e4377408a12f5b4e3-text/javascript"></script>
+        <script src="lib/rating/rating.js" type="b43bf35e4377408a12f5b4e3-text/javascript"></script>
+        <script src="lib/easing/easing.min.js" type="b43bf35e4377408a12f5b4e3-text/javascript"></script>
+        <script src="lib/waypoints/waypoints.min.js" type="b43bf35e4377408a12f5b4e3-text/javascript"></script>
+        <script src="lib/counterup/counterup.min.js" type="b43bf35e4377408a12f5b4e3-text/javascript"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js" type="b43bf35e4377408a12f5b4e3-text/javascript"></script>
+        <script src="lib/tempusdominus/js/moment.min.js" type="b43bf35e4377408a12f5b4e3-text/javascript"></script>
+        <script src="lib/tempusdominus/js/moment-timezone.min.js" type="b43bf35e4377408a12f5b4e3-text/javascript"></script>
+        <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js" type="b43bf35e4377408a12f5b4e3-text/javascript"></script>
+
+        <script src="js/main.js" type="b43bf35e4377408a12f5b4e3-text/javascript"></script>
+        <script src="js/rocket-loader.min.js" data-cf-settings="b43bf35e4377408a12f5b4e3-|49" defer=""></script>
+            <script>
+
+if(window.location.href.indexOf('/Thank.html')!=-1)
+{
+  gtag('event', 'conversion', {'send_to': 'AW-10996735564/aqlkCLb01eYDEMy80_so'});
+}
+</script>
+</body>
+
+</html>
