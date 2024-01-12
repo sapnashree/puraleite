@@ -7,7 +7,8 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
-
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
     <link href="img/images/fevi.png" rel="icon">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -126,7 +127,7 @@
         <div class="container-fluid p-0">
             <div class="owl-carousel header-carousel position-relative">
                 <div class="owl-carousel-item position-relative">
-                    <img class="img-fluid" src="img/images/banner1.png" alt="first_b">
+                    <img class="img-fluid" src="img/images/photos_gallery.png" alt="first_b" id="bluebg">
                     <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(15, 23, 43, .0);">
                         <div class="turkey_heading marquee  text-start t  mb-3 py-2 animated slideInDown">
                             <h6 class="text-center color_hed_tur"><i>Leading Turnkey solution provider for Dairy, Fruit and Beverages processing</i> </h6>
@@ -649,6 +650,21 @@ if(window.location.href.indexOf('/Thank.html')!=-1)
 {
   gtag('event', 'conversion', {'send_to': 'AW-10996735564/aqlkCLb01eYDEMy80_so'});
 }
+</script>
+<script>
+    function anim() {
+        var tl = new TimelineMax({ repeat: 0, repeatDelay:0, delay:1 });
+        tl.from("#bluebg", 1, { scale: 0, opacity: 1, ease: Power0.easeIn });
+        tl.to("#bluebg", 1.5, { scale: 1.5, opacity: 1, ease: Power0.easeIn });
+        tl.to("#bluebg", 1, { scale: 1, opacity: 1, ease: Power0.easeIn, onComplete: fadeInCome });
+    }
+
+    function fadeInCome() {
+        var comeElement = document.querySelector(".come");
+        TweenMax.to(comeElement, 1, { opacity: 1 });
+    }
+
+    anim();
 </script>
 </body>
 
